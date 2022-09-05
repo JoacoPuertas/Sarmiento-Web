@@ -1,0 +1,122 @@
+/* NAV */
+@media (min-width:860px) {
+    .pags ul li{
+    position: relative;
+    overflow: hidden;
+    }
+
+    .pags ul li::before {
+        content:"";
+        position: absolute;
+        height: 4px;
+        width: 100px;
+        background: #fff;
+        bottom: 0;
+        transform: translateX(110px) ;
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(.55,0,.1,1);
+    }
+
+    .pags ul li:hover::before {
+        transform: translateX(0px);
+        opacity: 1;
+        width: 30px;
+    }
+}
+
+
+/* FOOTER */
+
+.redes {
+    display: flex;
+    column-gap: 25px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius:50% ;
+    outline: 2px solid #fff;
+    transition-property: 
+    outline-offset, outline-color,
+    background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.icon--instagram:hover {
+    background-image:
+    radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%,
+    #fd5949 45%, #d6249f 60%,
+    #285aeb 90%) ;
+    outline-color: #a02d76;
+}
+
+.icon--facebook:hover {
+    background-image:
+    radial-gradient(circle at 30% 107%,
+    #ffffff 0%, #073ed6 5%,
+    #000262 45%, #010546 60%,
+    #285aeb 90%) ;
+    outline-color: #0959da;
+}
+
+.icon--volver:hover {
+    background-image:
+    radial-gradient(circle at 30% 107%,
+    #000000 0%, #095800 5%,
+    #17ce02 45%, #17ce02 60%,
+    #000000 90%) ;
+    outline-color: #00d00a;
+}
+
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+
+@media (min-width:860px) {
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* MULTIMEDIA */
+
+.animated-backgrond {
+    background: linear-gradient(
+        to right, rgb(6, 158, 253),
+        rgb(0, 3, 190), rgb(75, 0, 94));
+    background-size: 400% 400%;
+    animation: animated-backgrond 10s infinite ease-in-out;
+}
+
+@keyframes animated-backgrond {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+    
+}
