@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 /* NAV */
 @media (min-width:860px) {
     .pags ul li{
