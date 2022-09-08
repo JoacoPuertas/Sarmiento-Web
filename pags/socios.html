@@ -52,23 +52,56 @@
         </div>
     </header>
     <!-- end header -->
-    <main class="socios">
-        <h2>Socios</h2>
-        <div class="socios__container">
-            <div class="socios__container--text">
-
+    <main class="p-3 bg bg-primary">
+        <h2 class="ms-4">Socios</h2>
+        <div class="container-fluid row">
+            <div class="col-12 col-lg-6">
                 <p>Nuestros socios ademas de formar parte de la familia fortinera cuentan con distintos beneficios.</p>
-                <ul>
-                    <li>Descuento en el valor de las entradas de futbol</li>
-                    <li>Descuento en la utilizacion del quincho para fiestas</li>
-                    <li>Uso gratuito de de nuestras parrillas y mesas</li>
-                    <li>Descuento en nuestras canchas de padel y tenis</li>
-                </ul>
+                <div class="accordion " id="accordionExample">
+                    <div class="accordion-item bg-dark  my-3">
+                      <div class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Beneficios
+                        </button>
+                        </div>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul >
+                                <li class="c-white">Descuento en el valor de las entradas de futbol</li>
+                                <li class="c-white">Descuento en la utilizacion del quincho para fiestas</li>
+                                <li class="c-white">Uso gratuito de de nuestras parrillas y mesas</li>
+                                <li class="c-white">Descuento en nuestras canchas de padel y tenis</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
                 <p>Aquí tienes un formulario para llenar y poder empezar el tramite para ser socio/a de <b>Club Social y Deportivo Sarmiento.</b></p>
-                <h3>Dejanos tus datos y nos estaremos contactando con vos</h3>
+                <h5>Dejanos tus datos y nos estaremos contactando con vos</h5>
             </div>
-            <div class="socios__container--form">
-                <form  class="form__socios">
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <form action="" class="form-1 bg-dark px-3 py-5"> 
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre y apellido" >
+                        <label for="name">Nombre y apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Correo electronico">
+                        <label for="email">Correo electronico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="tel" placeholder="Num. de telefono">
+                        <label for="tel">Num. de telefono</label>
+                    </div>
+                    <div class="mt-3">
+                        <input class="enviar-1" type="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- <form  class="form__socios">
                     <div class="form__section">
                         <input type="text" id="name" required class="form__input" placeholder="Nombre y apellido" >
                     </div>
@@ -81,10 +114,7 @@
                     <div class="form__section">
                         <input type="submit"  class="form__boton" value="ENVIAR">
                     </div>           
-                </form>
-            </div>
-        </div>
-    </main>
+                </form> -->
     <footer> 
         <div class="redes">
             <a href="https://www.instagram.com/clubsarmientoameghino/" target="_blank" class="icon icon--instagram"><img src="../icons/instagram-line.svg" alt="instagram"></a>
