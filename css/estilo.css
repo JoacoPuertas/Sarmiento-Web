@@ -43,11 +43,19 @@ footer {
     
 }
 
+.escudo:hover {
+    transform: scale(1.2);
+    transition: scale, .5s;
+}
 @media (min-width:1200px){
     .escudo {
         width: 250px;
         top: -40px;
     }
+}
+
+.link-light:hover, .link-light:focus {
+    color: #01aaff;
 }
 /* HEADER */
 header h2{
