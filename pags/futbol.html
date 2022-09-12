@@ -5,61 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSyDS - Sitio Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/animate.css">
 </head>
-<body>
-    <nav id="nav">      
-        <a href="../index.html">
-            <div class="logo__text">
-                <h2>Sarmiento - <small>Sitio Oficial</small></h2>                
+<body class="font-family-Poppins">
+    <!-- Inicio nav -->
+    <nav id="nav" class="navbar navbar-expand-lg bg-dark p-3 fs-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.svg" alt="Logo de Sarmiento" class="d-lg-none d-sm-block logo-texto">
+                <img src="../img/logo.png" alt="Escudo de Sarmiento" class="d-none d-lg-block escudo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../img/boton-menu.svg" alt="Boton menu" class="burger">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="futbol.html">Futbol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="socios.html">Socios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="multimedia.html">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="conserjeria.html">Conserjeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="logo">
-                <img src="../img/logo.png" alt="logo sarmiento">
-            </div>    
-        </a>
-        <div class="pags">            
-            <ul>
-                <li>
-                    <a href="./futbol.html">Futbol</a>
-                </li>
-                <li>
-                    <a href="./socios.html">Socios</a>
-                </li>
-                <li>
-                    <a href="./multimedia.html">Multimedia</a>
-                </li>
-                <li>
-                    <a href="./conserjeria.html">Conserjeria</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
         </div>
     </nav>
-    <header>
-        <div class="header">
-            <h1> CLUB SOCIAL Y DEPORTIVO SARMIENTO</h1> 
-            <h3>Humildad y sacrificio</h3>
+    <!-- end nav -->
+    <!-- start header -->
+    <header class="bg-ligth pt-3">
+        <div class="text-center align-middle" class="header">
+            <h1 class="fs-1">CLUB SOCIAL Y DEPORTIVO SARMIENTO</h1> 
+            <h2 class="fs-2">Humildad y sacrificio</h2>
         </div>
-    </header> 
-    <main>
-        <section id="plantel">
-            <h2>Plantel</h2>
-            <ul class="plantel__list">
+    </header>
+    <!-- end header --> 
+    <main class="p-3 bg-primary">
+        <section class="container-fluid  py-5">
+            <h2 class="fs-4 fs-lg-3 fw-bold mb-4">Plantel</h2>
+            <ul class="fs-6 fs-lg-5">
                 <li><b>Cuerpo tecnico</b>: Sebastian Darrieu - Hugo Reynoso - Marcelo Parodi - Carlitos Santos - Alejandro Solé .</li></li>
-                <li><b>Jugadores</b>: Franco Cabuchi - Leonel Scorza - Marcos Cavia - Jonathan Ullua - Rodrigo Caceres - Joaquin Puertas - Juan Ignacio Coria - Victor Villegas - Leonel Caliani - Mauro Veron - Matias Ellero - Francisco Arano - Agustin Mansilla - Alejandro Azparren - Jose Ignacio Puertas - Vladimir Villegas - Bautista Darrieu - Thiago Novoa - Juan Nessi - Alan Sarmiento - Blas Julian - Nicolas Parentini - Nicolas Carballido - Fransisco Parodi - Benjamin Rebuchini - Arian Sarria - Elias Aguilar - Brian Dupuy - Santiago Diaz. </li>
+                <li><b>Jugadores</b>: Franco Aicardi - Leonel Scorza - Marcos Cavia - Jonathan Ullua - Jesus Zochi - Rodrigo Caceres - Joaquin Puertas - Juan Ignacio Coria - Victor Villegas - Leonel Caliani - Mauro Veron - Matias Ellero - Francisco Arano - Agustin Mansilla - Alejandro Azparren - Jose Ignacio Puertas - Vladimir Villegas - Bautista Darrieu - Thiago Novoa - Juan Cruz Nessi - Alan Sarmiento - Blas Julian - Nicolas Parentini - Nicolas Carballido - Francisco Parodi - Benjamin Rebuchini - Arian Sarria - Elias Aguilar - Brian Dupuy - Santiago Diaz. </li>
             </ul>
         </section>
-    </main>
-        <section class="tabla"> <!-- Tabla de Posiciones -->
-            <h2> Tabla de posiciones</h2>
-            <div class="tabla__div">
-                <div class="tabla__div--1ra">
-                    <h3>Primera division</h3>
-                    <table>
+    </main> 
+        <section class="container "> <!-- Tabla de Posiciones -->
+            <div class="row">
+                <div class="col p-3">
+                    <h3 class="text-center">Primera Division</h3>
+                    <table class="table table-dark table-hover w-75 w-lg-100 m-auto ">
                     <tr>
                         <td><b>Pos.</b></td>
                         <td><b>Equipo</b></td>
@@ -180,7 +186,7 @@
                         <td>9</td>
                         <td>4</td>
                     </tr>
-                    <tr>
+                    <tr class="table-primary">
                         <td>10</td>
                         <td><b>Sarmiento</b></td>
                         <td>11</td>
@@ -205,7 +211,7 @@
                         <td>-16</td>
                     </tr>
                     <tr>
-                        <td>11</td>
+                        <td>12</td>
                         <td>Dep. Blaquier</td>
                         <td>11</td>
                         <td>0</td>
@@ -219,9 +225,9 @@
                     
                     </table>
                 </div>
-                <div class="tabla__div--3ra">
-                    <h3>Tercera division</h3>
-                    <table>
+                <div class="col p-3 ">
+                    <h3 class="text-center">Tercera Division</h3>
+                    <table class="table table-dark table-hover w-75 w-lg-100  m-auto ">
                     <tr>
                         <td><b>Pos.</b></td>
                         <td><b>Equipo</b></td>
@@ -270,7 +276,7 @@
                         <td>15</td>
                         <td>27</td>
                     </tr>
-                    <tr>
+                    <tr class="table-primary">
                         <td>4</td>
                         <td><b>Sarmiento</b></td>
                         <td>11</td>
@@ -382,31 +388,31 @@
                 </div>
             </div>
         </section>
-        <section class="partidos">
-            <div class="partidos__container">
-                <div class="partidos__proximo">
+        <section class="container-fluid bg-dark py-3">
+            <div class="row p-3">
+                <div class="col-12 col-lg-6 partidos mb-2 mb-lg-0 ">
                     <h3>Proximo partido</h3>
-                    <ul>
-                        <li class="equipos"><b >Sarmiento vs Eclipse</b></li>
-                        <li><b>Estadio</b>: Enrique Calvo</li>
-                        <li><b>Horario 3ra Division</b>: 13:30 hs</li>
-                        <li><b>Horario 1ra Division</b>: 15:30 hs</li>
+                    <ul class="mt-4">
+                        <li class="text-center fs-5 mb-3"><b >Sarmiento vs Eclipse</b></li>
+                        <li class="datos-partidos"><b>Estadio</b>: Enrique Calvo</li>
+                        <li class="datos-partidos"><b>Horario 3ra Division</b>: 13:30 hs</li>
+                        <li class="datos-partidos"><b>Horario 1ra Division</b>: 15:30 hs</li>
                     </ul>
                 </div>
-                <div class="partidos__ultimo">            
+                <div class="col-12 col-lg-6 partidos mt-2 mt-lg-0 ">            
                     <h3>Ultimo partido</h3>
-                    <ul>
-                        <li><b>1ra division</b>: Atl. Villegas 4 - 0 Sarmiento</li>
-                        <li><b>Goles</b>: Montoto x2 - Pepe x2</li>
-                        <li><b>3ra division</b>: Atl. Villegas 0 - 1 Sarmiento</li>
-                        <li><b>Goles</b>: Arano</li>
+                    <ul class="text-center mt-4">
+                        <li class="datos-partidos"><b>1ra division</b>: Atl. Villegas 4 - 0 Sarmiento</li>
+                        <li class="datos-partidos"><b>Goles</b>: Montoto x2 - Pepe x2</li>
+                        <li class="datos-partidos"><b>3ra division</b>: Atl. Villegas 0 - 1 Sarmiento</li>
+                        <li class="datos-partidos"><b>Goles</b>: Arano</li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section id="historia__2">
-            <h2>La marca genetica fortinera: El Futbol</h3>
-            <div class="historia__2--container">
+        <section class="container-fluid p-3">
+            <h2 class="text-center my-3">La marca genetica fortinera: El Futbol</h3>
+            <div class="my-4">
                 <p>Desde la conformación de la subcomisión de futbol en el año 1951 y hasta la actualidad, dicha
                     actividad deportiva ha sido el sello característico y representativo de una institución que desde lo
                     deportivo ha inspirado respeto y admiración en la zona y aún más importante desde lo social
@@ -435,62 +441,95 @@
                 <ul>
                 <li>2010: La Flamante Comisión Directiva empieza los primeros movimientos trazando las líneas de
                 trabajo y los primeros objetivos: comenzar con la actividad oficial en 2012 solamente con las
-                divisiones infantiles (escuelita).</li>
+                divisiones infantiles (escuelita).
+                </li>
                 <li>2011: Comienza la actividad con la escuelita, las categorías más chicas y de forma paralela se
                     comienza trabajar en la construcción de la cancha y la finalización de los vestuarios (que por ese
                     entonces era la única obra comenzada). Para sorpresa de la Subcomisión se presentan chicos
                     mayores a 16 años con intenciones de entrenar, si bien no era la idea original se les brinda el espacio
                     y gracias al Sr. Sebastian Darrieux que se ofrece como dt y pf comienzan los entrenamientos de lo
-                    quería 1ra y 3ra división.</li>
-                    <li>2012: El regreso. Finalmente, el Fortín vuelve a la actividad con 1ra, 3ra, 8va y 9na división en la Liga
+                    quería 1ra y 3ra división.
+                </li>
+                <li>2012: El regreso. Finalmente, el Fortín vuelve a la actividad con 1ra, 3ra, 8va y 9na división en la Liga
                         de General Villegas. Con cancha propia y con todo el empuje que significa el regreso de Sarmiento a
-                        la actividad.</li>
-                        <li>Actualidad: El Club participa con todas las divisiones: 1ra, 3ra, 6ta, 7ma, 8va, 9na y 10 división.</p></li>
-                    </ul>
+                        la actividad.
+                </li>
+                <li>Actualidad: El Club participa con todas las divisiones: 1ra, 3ra, 6ta, 7ma, 8va, 9na y 10 división.
+                </li>
+                </ul>
             </div>
-            <h2>Titulos Obtenidos</h2>
-            <div class="titulos">
-                
-                <div class="titulos__container">
-                    <ul class="titulos_container--ul">
-                        <li>1953 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1980 - Campeon 2da Division - Liga Ameghinense de Futbol</li>
-                        <li>1981 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1982 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1982 - Campeon 6ta Division - Liga Ameghinense de Futbol</li>
-                        <li>1982 - Sub-Campeon 2da Division - Liga Ameghinense de Futbol</li>
-                        <li>1983 - Sub-Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1983 - Campeon 2da Division - Liga Ameghinense de Futbol</li>
-                        <li>1983 - Campeon 5ta Division - Liga Ameghinense de Futbol</li>
-                        <li>1984 - Campeon 5ta Division - Liga Ameghinense de Futbol</li>
-                        <li>1984 - Campeon 6ta Division - Liga Ameghinense de Futbol</li>
-                        <li>1986 - Sub-Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1990 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1998 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
-                        <li>1998 - Campeon 5ta Division - Ameghinense de Futbol</li>
-                        <li>1998 - Campeon Sub 21 - Liga Ameghinense de Futbol</li>
-                        <li>1999 - Campeon Apertura 1ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>1999 - Sub-Campeon Anual 1ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>1999 - Campeon Apertura 1ra Sub 18 - Liga de Futbol de Gral. Villegas</li>
-                        <li>2014 - Sub-Campeon Apertura 1ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2014 - Campeon Apertura 3ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2014 - Campeon Anual 3ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2015 - Campeon Apertura 3ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2016 - Campeon Copa de Oro 7ma Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2018 - Campeon 7ma Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2018 - Sub-Campeon 6ta Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2019 - Campeon Octogonal 1ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2019 - Campeon 6ta Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2019 - Campeon Torneo Los Gurises 8va Division</li>
-                        <li>2021 - Campeon 3ra Division - Liga de Futbol de Gral. Villegas</li>
-                        <li>2021 - Sub-Campeon 6ta Division - Liga de Futbol de Gral. Villegas</li>
-                    </ul>
+            <h2 class="my-5 text-center">Titulos Obtenidos</h2>
+            <div class="my-4 container accordion accordion-flush" >
+                <div class="accordion-item ">
+                    <div class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Titulos 1ra Division
+                        </button>
+                    </div>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li >1953 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1981 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1982 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1983 - Sub-Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1986 - Sub-Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1990 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1998 - Campeon 1ra Division - Liga Ameghinense de Futbol</li>
+                                <li>1999 - Campeon Apertura 1ra Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>1999 - Sub-Campeon Anual 1ra Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>1999 - Campeon Apertura 1ra Sub 18 - Liga de Futbol de Gral. Villegas</li>
+                                <li>2014 - Sub-Campeon Apertura 1ra Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2019 - Campeon Octogonal 1ra Division - Liga de Futbol de Gral. Villegas</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos__imagenes">
-                    <img src="../img/galeria/festejo2.jpg" alt="Festejo">
-                    <img src="../img/galeria/festejo1.jpg" alt="Festejo">
+                <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Titulos 2da y 3ra Division
+                        </button>
+                    </div>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>1980 - Campeon 2da Division - Liga Ameghinense de Futbol</li>
+                                <li>1982 - Sub-Campeon 2da Division - Liga Ameghinense de Futbol</li>
+                                <li>1983 - Campeon 2da Division - Liga Ameghinense de Futbol</li>
+                                <li>1998 - Campeon Sub 21 - Liga Ameghinense de Futbol</li>
+                                <li>2014 - Campeon Apertura 3ra Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2014 - Campeon Anual 3ra Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2015 - Campeon Apertura 3ra Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2021 - Campeon 3ra Division - Liga de Futbol de Gral. Villegas</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Titulos Inferiores
+                        </button>
+                    </div>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>1982 - Campeon 6ta Division - Liga Ameghinense de Futbol</li>
+                                <li>1983 - Campeon 5ta Division - Liga Ameghinense de Futbol</li>
+                                <li>1984 - Campeon 5ta Division - Liga Ameghinense de Futbol</li>
+                                <li>1984 - Campeon 6ta Division - Liga Ameghinense de Futbol</li>
+                                <li>1998 - Campeon 5ta Division - Ameghinense de Futbol</li>
+                                <li>2016 - Campeon Copa de Oro 7ma Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2018 - Campeon 7ma Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2018 - Sub-Campeon 6ta Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2019 - Campeon 6ta Division - Liga de Futbol de Gral. Villegas</li>
+                                <li>2019 - Campeon Torneo Los Gurises 8va Division</li>
+                                <li>2021 - Sub-Campeon 6ta Division - Liga de Futbol de Gral. Villegas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </section>
     <footer>
         <div class="redes">
@@ -503,5 +542,6 @@
             </a>
         </div>        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
