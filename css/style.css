@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
 
-
 * {
     font-family: Poppins, 'Times New Roman', Times, serif;
-    text-decoration: none;
     list-style: none; 
     /* reset */
     padding: 0;
@@ -16,6 +14,9 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
 h1, h2, h3, h4, h5, p {
     cursor: default;
 }
@@ -23,14 +24,27 @@ h1, h2, h3, h4, h5, p {
 body {
     background-color: #2961f9;
 }
-/* NAV */
-nav {
+
+.bg-black {
     background-color: #000;
+}
+
+/* NAV */
+
+#nav img{
+    width:200px
+}
+
+.escudo {
+    display: none;
+}
+/* nav { 
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    align-items: center; 
+ } */
 /* LOGO */
+/*  
 .logo {
     display: none;
 }
@@ -38,14 +52,12 @@ nav {
     color: #4266c9;
     padding: 15px;
     font-size: 2.2vw;
-}
-
-
+} */
 /* PAGS */
-
+/*  
 .pags {
     display: flex;
-    /* width: 100vw; */
+    /* width: 100vw; 
     justify-content: center;
 }
 .pags ul {
@@ -55,17 +67,19 @@ nav {
     width: 96vw;
     padding: 15px 0;
     font-size: 3vw;
-}
-.pags li {
+}*/
+
+/* #nav li {
     font-weight: 700;
+    font-size: 1.4em;
 }
 
-.pags li a {
+#nav li a {
     color: #fff;
 }
-.pags li a:hover {
+#nav li a:hover {
     color: rgb(74, 142, 220);
-}
+} */
 /* HEADER */
 header {
     background-color: #ddd;
@@ -94,7 +108,7 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
+ 
 /* INICIO */
 /* DESCRIPCION */
 
@@ -621,7 +635,7 @@ hr {
 
 
     /* NAV */
-    #nav {
+    /* #nav {
         height: 15vh;
         flex-direction: row;
     }
@@ -657,12 +671,12 @@ hr {
     .pags li {
         padding: 6px;
         margin: 0 6px;
-    }
+    } */
 }
 @media (min-width: 1024px) {
 
     /* NAV */
-    #nav {
+    /* #nav {
         height: 15vh;
     }
     .logo__text {
@@ -696,8 +710,8 @@ hr {
     .pags li {
         padding: 6px;
         margin: 0 6px;
-    }
-}
+    }*/
+} 
 
 
 /* INICIO BREAKPOINTS*/

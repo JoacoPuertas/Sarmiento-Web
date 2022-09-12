@@ -5,83 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSyDS - Sitio Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/animate.css">
 </head>
-<body>
-    <nav id="nav">      
-        <a href="../index.html">
-            <div class="logo__text">
-                <h2>Sarmiento - <small>Sitio Oficial</small></h2>                
+<body class="font-family-Poppins">
+    <!-- Inicio nav -->
+    <nav id="nav" class="navbar navbar-expand-lg bg-dark p-3 fs-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.svg" alt="Logo de Sarmiento" class="d-lg-none d-sm-block logo-texto">
+                <img src="../img/logo.png" alt="Escudo de Sarmiento" class="d-none d-lg-block escudo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../img/boton-menu.svg" alt="Boton menu" class="burger">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="futbol.html">Futbol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="socios.html">Socios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="multimedia.html">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="conserjeria.html">Conserjeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="logo">
-                <img src="../img/logo.png" alt="logo sarmiento">
-            </div>    
-        </a>
-        <div class="pags">            
-            <ul>
-                <li>
-                    <a href="./futbol.html">Futbol</a>
-                </li>
-                <li>
-                    <a href="./socios.html">Socios</a>
-                </li>
-                <li>
-                    <a href="./multimedia.html">Multimedia</a>
-                </li>
-                <li>
-                    <a href="./conserjeria.html">Conserjeria</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
         </div>
     </nav>
-    </nav>
-    <header>
-        <div class="header">
-            <h1> CLUB SOCIAL Y DEPORTIVO SARMIENTO</h1> 
-            <h3>Humildad y sacrificio</h3>
+    <!-- end nav -->
+    <!-- start header -->
+    <header class="bg-ligth pt-3">
+        <div class="text-center align-middle" class="header">
+            <h1 class="fs-1">CLUB SOCIAL Y DEPORTIVO SARMIENTO</h1> 
+            <h2 class="fs-2">Humildad y sacrificio</h2>
         </div>
     </header>
-    <main class="multimedia">
-        <section class="jugadores"> <!--Jugadores-->
-            <h3>JUGADORES</h3>
-            <div class="jugadores__container">
-                <img src="../img/galeria/cabuchi.jpg" alt="cabuchi">
-                <img src="../img/galeria/azpa.jpg" alt="azparren">
-                <img src="../img/galeria/bauti.jpg" alt="bautista">
-                <img src="../img/galeria/chunga.jpg" alt="francisco">
-                <img src="../img/galeria/joaco.jpg" alt="joaquin">
-                <img src="../img/galeria/partido.jpg" alt="partido">
-                <img src="../img/galeria/partido1.jpg" alt="partido1">
-                <img src="../img/galeria/festejo.jpg" alt="festejo2">
-                <img src="../img/galeria/pesta.jpg" alt="rodrigo">
-                <img src="../img/galeria/pollo.jpg" alt="agustin">
-                <img src="../img/galeria/alan.jpg" alt="alan">
-                <img src="../img/galeria/diego.jpg" alt="diego">
-                <img src="../img/galeria/joni.jpg" alt="joni">
-                <img src="../img/galeria/thiago.jpg" alt="thiago">
-                <img src="../img/galeria/victor.jpg" alt="victor">
-                <img src="../img/galeria/vladi.jpg" alt="vladi">
-                <img src="../img/galeria/santi.jpg" alt="santi">
-                <img src="../img/galeria/nessi.jpg" alt="juan">
+    <!-- end header --> 
+    <main class="bg-celeste p-5 row">
+        <section class="container-fluid col-12 col-lg-8">
+            <h2 class="text-center text-white mb-3 mb-lg-5">JUGADORES</h2>
+            <div id="carouselExampleControls" class="carousel carrusel slide w-100 m-auto" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/galeria/cabuchi.jpg" class="d-block w-100" alt="Cabuchi">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/azpa.jpg" class="d-block w-100" alt="Alexis Azparren">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/joaco.jpg" class=" d-block w-100" alt="Joaco Puertas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/chunga.jpg" class="d-block w-100" alt="Fran Arano">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/alan.jpg" class="d-block w-100" alt="Alan Sarmiento">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/bauti.jpg" class="d-block w-100" alt="Bauti Darrieu">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/diego.jpg" class="d-block w-100" alt="Diego Ruiz">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/festejo.jpg" class="d-block w-100" alt="Festejo de gol">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/joni.jpg" class="d-block w-100" alt="Joni Ullua">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/festejo1.jpg" class="d-block w-100" alt="Festejo de Campeonato">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/nessi.jpg" class="d-block w-100" alt="Juan Cruz Nessi">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/festejo2.jpg" class="d-block w-100" alt="Festejo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/pesta.jpg" class="d-block w-100" alt="Rodrigo Caceres">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/thiago.jpg" class="d-block w-100" alt="Thiago Novoa">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/vladi.jpg" class="d-block w-100" alt="Vladi Villegas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/santi.jpg" class="d-block w-100" alt="Santi Diaz">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/pollo.jpg" class="d-block w-100" alt="Pollo Mansilla">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/galeria/victor.jpg" class="d-block w-100" alt="Victor Villegas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <hr>
-        <section class="predio"> <!--Polideportivo-->
-            <h3>POLIDEPORTIVO</h3>
-            <div class="predio-container">
-                <img src="../img/galeria/cancha.jpg" alt="Cancha de futbol">
-                <img src="../img/galeria/escudo (1).jpg" alt="Escudo"> 
-                <img src="../img/galeria/tribuna.jpg" alt="Tribuna">
-                <img src="../img/galeria/parrilla1.jpg" alt="Parrilla">
-                <img src="../img/galeria/parrilla2.jpg" alt="Parrilla">
-                <img src="../img/galeria/tenis.jpg" alt="Cancha de tenis">
-                
-            </div>
+        <section class="container-fluid col-12 col-lg-8">
+            <h2 class="text-center text-white mb-3 mb-lg-5">POLIDEPORTIVO</h2>
+            <div id="carouselExampleIndicators" class="carousel carrusel  slide w-100 m-auto" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/galeria/escudo.jpg" class="d-block w-100" alt="escudo de sarmiento">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/galeria/parrilla1.jpg" class="d-block w-100" alt="parrillas y mesas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/galeria/tribuna.jpg" class="d-block w-100" alt="tribuna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/galeria/parrilla2.jpg" class="d-block w-100" alt="parrillas y mesas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/galeria/tenis.jpg" class="d-block w-100" alt="cancha de tenis">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
     </main>
     <footer>
@@ -95,5 +174,6 @@
             </a>
         </div>        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
