@@ -44,7 +44,7 @@ footer {
 }
 
 .escudo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: scale, .5s;
 }
 @media (min-width:1200px){
