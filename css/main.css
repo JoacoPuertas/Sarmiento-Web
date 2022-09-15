@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@600&family=Roboto&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+header h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+nav {
+  background-color: #000;
+}
+nav .escudo {
+  width: 140px;
+  position: absolute;
+  top: -10px;
+}
+nav .escudo:hover {
+  transform: scale(1.1);
+  transition: scale, 0.5s;
+}
+@media (min-width: 1200px) {
+  nav .escudo {
+    width: 250px;
+    top: -40px;
+  }
+}
+nav .burger {
+  width: 4vw;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ccc;
+}
+.header h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+footer {
+  padding: 20px 30px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.descripcion {
+  background-color: rgb(0, 119, 255);
+}
+.descripcion p {
+  color: #000;
+  font-weight: 600;
+}
+
+.merendero__container {
+  display: flex;
+  justify-content: center;
+}
+.merendero__container h2 {
+  color: #000;
+  font-weight: 600;
+}
+.merendero__container p {
+  color: #000;
+}
+.merendero__container .merendero {
+  max-width: 900px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .merendero__container .merendero {
+    max-width: 900px;
+    width: 45%;
+  }
+}
+.merendero__container .merendero img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px;
+}
+
+.noticias {
+  background-color: #000;
+}
+.noticias h2 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.historia h2 {
+  font-weight: 600;
+}
+.historia p {
+  color: #000;
+}
+.historia ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.plantel {
+  background-color: rgb(0, 119, 255);
+  color: #000;
+}
+.plantel ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tablas {
+  width: 80vw;
+}
+.tablas td tr {
+  font-size: 0.9em;
+}
+
+.container__partidos {
+  background-color: #000;
+}
+
+.partidos {
+  margin: auto;
+  padding: 15px;
+  border: 2px solid #000;
+  background-color: rgb(0, 119, 255);
+  border-radius: 5px;
+  color: #000;
+}
+@media (min-width: 576px) {
+  .partidos {
+    width: 60vw;
+  }
+}
+@media (min-width: 992px) {
+  .partidos {
+    width: 45%;
+    height: 20vw;
+    margin: auto;
+    border: 2px solid #000;
+    background-color: rgb(0, 67, 192);
+    border-radius: 5px;
+    color: #000;
+  }
+}
+.partidos .datos-partidos {
+  margin-top: 5px;
+}
+@media (min-width: 1200px) {
+  .partidos .datos-partidos {
+    margin: 20px 0;
+  }
+}
+
+.historia-2 ul {
+  padding: 0;
+}
+
+.socios {
+  background-color: rgb(0, 119, 255);
+  color: #000;
+}
+.socios ul {
+  margin: 0;
+  padding: 0;
+}
+.socios ul li {
+  color: #fff;
+}
+
+.form-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.form-1 div {
+  width: 90%;
+  border: none;
+}
+.form-1 div label {
+  color: #fff;
+}
+.form-1 div input {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: none;
+  outline: none;
+  border-bottom: 3px solid #01aaff;
+  width: 100%;
+}
+.form-1 div input:focus {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.enviar1 {
+  padding: 10px;
+}
+.enviar1:hover {
+  background-color: #002238;
+}
+
+.multimedia {
+  background-color: #002238;
+  color: #fff;
+}
+
+.conserjeria {
+  color: #000;
+}
+
+.contacto {
+  background-color: #333;
+  color: #fff;
+}
+
+.form-2 {
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: rgb(0, 119, 255);
+}
+.form-2 input {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: none;
+  outline: none;
+  border-bottom: 3px solid #01aaff;
+}
+.form-2 input:focus {
+  background-color: #002238;
+  color: #fff;
+  border: none;
+}
+.form-2 textarea {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: none;
+  outline: none;
+  border-bottom: 3px solid #01aaff;
+  resize: none;
+}
+.form-2 textarea:focus {
+  background-color: #002238;
+  color: #fff;
+  border: none;
+}
+
+.enviar-2 {
+  width: 100%;
+  padding: 10px;
+}
+.enviar-2:hover {
+  background-color: #002238;
+}/*# sourceMappingURL=main.css.map */

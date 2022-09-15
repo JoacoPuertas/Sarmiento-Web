@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
 
-* {
+/* * {
     font-family: Poppins, 'Times New Roman', Times, serif;
     list-style: none; 
     resize: none;
@@ -9,9 +9,9 @@
 ul {
     margin: 0;
     padding: 0;
-}
+} */
 /* COLORES */
-.c-white {
+/* .c-white {
     color: #fff;
 }
 .bg-black {
@@ -20,7 +20,7 @@ ul {
 
 .bg-celeste {
     background-color: #002238;
-}
+} */
 
 footer {
     padding: 20px 30px;
@@ -31,12 +31,12 @@ footer {
 }
 
 
-.burger {
+/* .burger {
     width: 4vw;
-}
+} */
 
 /* LOGO */
-.escudo {
+/* .escudo {
     width: 140px;
     position: absolute;
     top: -10px;
@@ -56,14 +56,14 @@ footer {
 
 .link-light:hover, .link-light:focus {
     color: #01aaff;
-}
+} */
 /* HEADER */
-header h2{
+/* header h2{
     font-family: dancing script, Poppins;
-}
+} */
 
 /* MERENDERO */
-.merendero__container {
+/* .merendero__container {
     display: flex;
     justify-content: center;
 }
@@ -79,24 +79,24 @@ header h2{
     height: 100%;
     border-radius: 15px;
     box-shadow: 3px 3px 10px;
-}
+} */
 
-@media (min-width:992px) {
+/* @media (min-width:992px) {
     .merendero{
         max-width: 900px;
         width: 45%;
     }
-}
+} */
 
-.tablas {
+/* .tablas {
     width: 80vw;
 }
 
 td, tr {
     font-size: 0.9em;
-}
+} */
 
-.partidos {
+/* .partidos {
     margin: auto;
     padding: 15px;
     border: 2px solid #000;
@@ -157,10 +157,10 @@ td, tr {
     background-color: rgb(47, 46, 46);
     color: #fff;
     border: none;
-}
+} */
 
 
-.enviar-1 {
+/* .enviar-1 {
     width: 100%;
     padding: 10px;
 }
@@ -209,4 +209,4 @@ td, tr {
 }
 .enviar-2:hover {
     background-color: rgb(2, 33, 49);
-}
+} */

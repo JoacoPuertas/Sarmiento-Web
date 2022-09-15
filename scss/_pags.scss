@@ -1,0 +1,237 @@
+
+//DESCRIPCION
+
+.descripcion {
+    background-color: $mainColor;
+    p {
+        color: $black;
+        font-weight: $textBold;
+    }
+}
+
+//MERENDERO
+
+.merendero__container {
+    display: flex;
+    justify-content: center;
+    h2 {
+        color: $black;
+        font-weight: $textBold; 
+    }
+    p {
+        color: $black;
+    }
+    .merendero {
+        max-width: 900px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        @media (min-width:992px) {
+            max-width: 900px;
+            width: 45%;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px;
+        }
+    }
+}
+
+//NOTICIAS 
+
+.noticias {
+    background-color: $black;
+    h2 {
+        color: $white;
+        font-weight: $textBold;
+    }
+}
+
+//HISTORIA 
+
+.historia {
+    h2 {
+        font-weight: $textBold
+    }
+    p {
+        color: $black;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+//FUTBOL 
+
+.plantel {
+    background-color: $mainColor;
+    color: $black;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+//TABLAS
+.tablas {
+    width: 80vw;
+    td {
+        tr {
+            font-size: $textSm;
+        }
+    }
+}
+
+//PARTIDOS
+.container__partidos {
+    background-color: $black;
+}
+.partidos {
+    margin: auto;
+    padding: 15px;
+    border: 2px solid $black;
+    background-color: $mainColor;
+    border-radius: 5px;
+    color: $black;
+    @media (min-width:576px){
+        width: 60vw;
+    }
+    @media (min-width:992px) {
+        width: 45%;
+        height: 20vw;
+        margin: auto;
+        border: 2px solid $black;
+        background-color: $secundaryColor;
+        border-radius: 5px;
+        color: $black;
+    }
+    .datos-partidos {
+        margin-top: 5px;
+        @media (min-width:1200px){
+            margin: 20px 0;
+        }
+    }
+}
+
+.historia-2 {
+    ul {
+        padding: 0;
+    }
+}
+
+
+
+//SOCIOS
+.socios {
+    background-color: $mainColor;
+    color: $black;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            color: $white;
+        }
+    }
+}
+.form-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    div {
+        width: 90%;
+        border: none;
+        label {
+        color: $white;
+    }
+        input {
+            background-color: $black;
+            color: $white;
+            border: none;
+            border-radius: none;
+            outline: none;
+            border-bottom: 3px solid $btn-color;
+            width: 100%;
+            &:focus {
+                background-color: $gray;
+                color: $white;
+                border: none;
+            }
+            
+        }
+
+    }
+    
+
+}
+.enviar1 {
+    padding: 10px;
+    &:hover {
+        background-color: $darkblue;
+    }
+}
+
+//MULTIMEDIA 
+
+.multimedia {
+    background-color: $darkblue;
+    color: $white;
+}
+
+//CONSERJERIA 
+.conserjeria {
+    color: $black;
+}
+//CONTACTO
+.contacto {
+    background-color: $gray;
+    color: $white;
+}
+.form-2 {
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: $mainColor;
+    input {
+        background-color: $black;
+        color: $white;
+        border: none;
+        border-radius: none;
+        outline: none;
+        border-bottom: 3px solid $btn-color;
+        &:focus {
+            background-color: $darkblue;
+            color: $white;
+            border: none;
+        }
+    }    
+    textarea {
+        background-color: $black;
+        color: $white;
+        border: none;
+        border-radius: none;
+        outline: none;
+        border-bottom: 3px solid $btn-color;
+        resize: none;
+        &:focus {
+            background-color: $darkblue;
+            color: $white;
+            border: none;
+        }
+    }
+    
+    
+}
+
+.enviar-2 {
+            width: 100%;
+            padding: 10px;
+            &:hover {
+                background-color: $darkblue
+            }
+        }
