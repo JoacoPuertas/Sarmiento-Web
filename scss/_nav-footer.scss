@@ -1,0 +1,43 @@
+
+//NAV
+nav {
+    background-color: $black;
+    .escudo {
+        width: 140px;
+        position: absolute;
+        top: -10px;
+        &:hover {
+            transform: scale(1.1);
+            transition: scale, .5s;
+        }
+        @media (min-width:1200px) {
+            width: 250px;
+            top: -40px; 
+        }
+    }
+    .burger {
+        width: 4vw;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+//HEADER 
+.header {
+    background-color: $lightgray;
+    h2 {
+        font-family: $cursiva;
+    }
+}
+
+//FOOTER 
+
+footer {
+    padding: 20px 30px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,28 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@600&family=Roboto&display=swap');
+$cursiva:'Dancing Script', cursive;
+$mainFont:'Poppins', sans-serif;
+$secundaryFont:'Roboto', sans-serif;
+
+//Sizings
+$textXl: 1.9em;
+$textLg: 1.5em;
+$textMd: 1.2em;
+$textSm: 0.9em;
+$textXs: 0.7em;
+
+//Weigths
+$textBold: 600;
+$textExtraBold: 900;
+$textNormal:300;
+
+* {
+    font-family: $mainFont;
+    list-style: none;
+} 
+
+header {
+    h2 {
+        font-family: $cursiva;
+    }
+}
