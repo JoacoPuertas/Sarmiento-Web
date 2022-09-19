@@ -187,6 +187,31 @@
 //CONSERJERIA 
 .conserjeria {
     color: $black;
+    text-align: center;
+    hr {
+        color: $white;
+        margin: auto;
+        margin-top:40px;
+        width: 70vw;
+        
+    }
+}
+
+@media (min-width:992px) {
+    .conserjeria {
+        text-align: start ;
+    }
+    .carousel, .carousel-inner {
+        height: 100vh;
+        width: 40vw;
+        margin: auto;
+    }
+    .carousel-control-prev {
+        left: 100px ; 
+    }
+    .carousel-control-next {
+        right: 100px;
+    }
 }
 //CONTACTO
 .contacto {
