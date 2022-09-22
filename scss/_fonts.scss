@@ -7,9 +7,9 @@ $secundaryFont:'Roboto', sans-serif;
 //Sizings
 $textXl: 1.9em;
 $textLg: 1.5em;
-$textMd: 1.2em;
+$textMd: 1.0em;
 $textSm: 0.9em;
-$textXs: 0.7em;
+$textXs: 0.8em;
 
 //Weigths
 $textBold: 600;
@@ -22,7 +22,7 @@ $textNormal:300;
 } 
 
 header {
-    h2 {
+    h3 {
         font-family: $cursiva;
     }
 }
