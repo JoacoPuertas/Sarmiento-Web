@@ -1,0 +1,137 @@
+
+
+.btn-form {
+    width: 100%;
+    padding: 10px;
+    &:hover {
+        background: linear-gradient(to top, $blue, $darkblue);
+    }
+}
+
+.input-form {
+    background-color: $black;
+    color: $white;
+    border: none;
+    border-radius: none;
+    outline: none;
+    border-bottom: 3px solid $btn-color;
+    &:focus {
+        background-color: $darkblue;
+        color: $white;
+        border: none;
+    }
+}
+
+.box-multimedia {
+    color: $darkblue;
+    border-radius: 15px;
+    box-shadow: $black 3px 3px 10px;
+    width: 60vw;
+    padding-bottom: 15px;
+    h3 {
+        padding-top: 20px;
+    }
+}
+//MIXINS
+@mixin medidas($width, $height, $padd, $margin){
+    width: $width;
+    height: $height;
+    padding: $padd;
+    margin: $margin;
+}
+
+@mixin box($border, $radius, $shadow, $outline){
+    border: $border;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    outline: $outline;
+}
+@mixin textos($size, $weight, $color, ) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+@mixin reset($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//----------------GENERAL----------------//
+h2 {
+    @include textos($textLg, $textNormal ,$black );
+}
+
+p, ul, li {
+    @include textos($textMd, $textNormal ,$black );
+}
+
+ul, li {
+    @include reset(0, 0);
+}
+
+footer {
+    @include flex(row, space-between , center);
+}
+   //----------------INDEX----------------//
+.merendero__container {
+    @include flex(row, center , center);
+    .merendero{
+        @include flex(row, center , center);
+        img {
+            @include medidas(100%,100% ,0 ,0);
+            @include box(0px, 15px, 3px 3px 10px, none);
+        }
+    }
+}
+
+//----------------FUTBOL----------------//
+.partidos {
+    @include medidas(100%,100% ,15px , auto);
+    @include box(2px solid $black, 5px, 0px 0px 3px $white, none);
+}
+//----------------SOCIOS----------------//
+.form-1 {
+    @include flex(column, center, center);
+}
+//----------------MULTIMEDIA----------------//
+
+//----------------CONSERJERIA----------------//
+
+//----------------CONTACTO----------------//
+
+
+//MAPS
+
+$paleta:(
+    'uno': #2852E1,
+    'dos': #3875E5,
+    'tres': #0028FF,
+    'cuatro': #005461,
+    'cinco': #2C93F1,
+    'seis': #ccc,
+    'siete':#333,
+    'ocho': #002238,
+    'nueve': #01aaff,
+    'diez' : #7A7BFF,
+);
+
+.socios {
+    background-color: map-get($map: $paleta, $key:'dos');
+}
+.multimedia {
+    background-color: map-get($map:$paleta, $key:'cuatro');
+}
+.box-multimedia {
+    background-color: map-get($map:$paleta , $key:'seis' );
+}
+
+.contacto {
+    background-color: map-get($map: $paleta, $key:'siete');
+}
