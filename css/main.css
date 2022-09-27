@@ -106,6 +106,10 @@ footer {
   align-items: center;
 }
 
+.partidos {
+  background-color: #005461;
+}
+
 .socios {
   background-color: #3875E5;
 }
@@ -124,6 +128,9 @@ footer {
 
 nav {
   background-color: #000;
+}
+nav .logo-texto {
+  width: 80%;
 }
 nav .escudo {
   width: 140px;
@@ -194,11 +201,7 @@ footer {
 }
 
 .plantel {
-  background-color: rgb(0, 119, 255);
-}
-
-table {
-  font-size: 0.9em;
+  background-color: #ccc;
 }
 
 .container__partidos {
@@ -206,7 +209,6 @@ table {
 }
 
 .partidos {
-  background-color: rgb(0, 119, 255);
   color: #000;
 }
 @media (min-width: 576px) {
