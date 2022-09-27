@@ -45,12 +45,7 @@
 //FUTBOL 
 
 .plantel {
-    background-color: $mainColor;
-}
-
-//TABLAS
-table {
-    font-size: $textSm;
+    background-color: $lightgray;
 }
 
 //PARTIDOS
@@ -58,7 +53,6 @@ table {
     background-color: $black;
 }
 .partidos {
-    background-color: $mainColor;
     color: $black;
     @media (min-width:576px){
         width: 60vw;

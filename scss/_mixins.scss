@@ -122,8 +122,11 @@ $paleta:(
     'diez' : #7A7BFF,
 );
 
+.partidos {
+    background-color: map-get($map:$paleta, $key:'cuatro');
+}
 .socios {
-    background-color: map-get($map: $paleta, $key:'dos');
+    background-color: map-get($map:$paleta, $key:'dos');
 }
 .multimedia {
     background-color: map-get($map:$paleta, $key:'cuatro');
