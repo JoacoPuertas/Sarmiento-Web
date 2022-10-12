@@ -22,7 +22,14 @@ $textNormal:300;
 } 
 
 header {
+    h1 {
+        color: $black;
+    }
     h3 {
         font-family: $cursiva;
     }
+}
+
+b {
+    font-weight: $textBold;
 }

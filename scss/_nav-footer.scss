@@ -2,6 +2,17 @@
 //NAV
 nav {
     background-color: $black;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            padding: 0;
+            margin: 0;
+            width: 70vw;
+            min-width: 100px;
+            max-width: 300px;
+        }
+    }
     .logo-texto {
         width: 80%;
     }

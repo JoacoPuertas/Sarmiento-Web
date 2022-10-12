@@ -103,7 +103,12 @@ footer {
 //----------------MULTIMEDIA----------------//
 
 //----------------CONSERJERIA----------------//
-
+.text__conserjeria {
+    @include flex(column, center, center );
+    @media (min-width: 992px) {
+        @include flex(row, space-evenly, center )
+    }
+}
 //----------------CONTACTO----------------//
 
 
@@ -133,6 +138,10 @@ $paleta:(
 }
 .box-multimedia {
     background-color: map-get($map:$paleta , $key:'seis' );
+}
+
+.conserjeria {
+    background: map-get($map:$paleta, $key:cinco );
 }
 
 .contacto {
